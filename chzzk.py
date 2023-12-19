@@ -25,8 +25,6 @@ class Chzzk(Plugin):
         self.category = live_content["liveCategory"]
         self.title = live_content["liveTitle"].replace("\n", " ").strip()
 
-        print(self.title)
-
         playback_data = json.loads(live_content["livePlaybackJson"])
  
         variant = HLSStream.parse_variant_playlist(self.session, list(map(lambda x:x['path'],playback_data['media'])) [0]) 
