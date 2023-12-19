@@ -23,7 +23,9 @@ class Chzzk(Plugin):
         self.id = live_content["liveId"];
         self.author = live_content["channel"]["channelName"]
         self.category = live_content["liveCategory"]
-        self.title = live_content["liveTitle"]
+        self.title = live_content["liveTitle"].replace("\n", " ").strip()
+
+        print(self.title)
 
         playback_data = json.loads(live_content["livePlaybackJson"])
  
