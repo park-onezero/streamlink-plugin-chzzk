@@ -3,7 +3,6 @@
 - API 버전 v1에서 v2로 변경
 - 19세 방송 여부 확인 로직 추가
 - API 요청에 네이버 쿠키 적용 가능
-    - streamlink --chzzk-cookies "NID_AUT=BLAH; NID_SES=BLAHBLAH;"
 
 ## 플러그인 사용 방법
 
