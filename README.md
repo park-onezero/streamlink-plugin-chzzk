@@ -1,4 +1,9 @@
-# 플러그인 사용 방법
+## Change Logs
+### [2024-01-06]
+- API 버전 v1에서 v2로 변경
+- 19세 방송 여부 확인 로직 추가
+
+## 플러그인 사용 방법
 
 다운로드 한 파일을 폴더에 집어넣고 폴더 경로를 **--plugin-dirs** 뒤에 넣어주시면 됩니다.
 
@@ -11,3 +16,5 @@
 streamlink --plugin-dirs .\plugins https://chzzk.naver.com/live/blahblah best -o output.mp4 --ffmpeg-copyts
 ```
 
+## Todo List
+- [ ] 네이버 로그인 추가
